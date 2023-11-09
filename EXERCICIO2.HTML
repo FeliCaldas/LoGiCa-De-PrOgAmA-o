@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>ACHO QUE A GENTE NAO DA MAIS CERTO</h1>  
+<label for="nome">Bota seu nome</label>
+<input type="text" id="nome" placeholder="Aqui você bota teu name">
+<button id="meuBotao">MeuBotão</button>
+<p id="Mensageiro"></p>
+<script>
+document.getElementById("meuBotao").addEventListener("click",
+function(){
+  let nome = document.getElementById("nome")
+
+document.getElementById("Mensageiro").innerHTML = "BomDia,"+nome+"!"
+
+}
+)
+
+</script>
+
+</body>
+</html>
